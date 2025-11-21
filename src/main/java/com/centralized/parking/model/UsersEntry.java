@@ -11,7 +11,7 @@ public class UsersEntry {
 	
 	@NotBlank
 	@Size(min=2, max=50)
-	@Pattern(regexp = "^[A-Z][a-z]*(\\s[A-Z][a-z]*)*$", message = "Invalid Username Format")
+	@Pattern(regexp = "^[A-Za-z0-9]+(?:\\s[A-Za-z0-9]+)*$", message = "Invalid Username Format")
 	private String username;
 	
 	@NotBlank
